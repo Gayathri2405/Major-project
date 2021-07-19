@@ -1,6 +1,6 @@
 !pip install adafruit-io --quiet
 from Adafruit_IO import Client
-aio = Client('Gayu2405', 'aio_TsMo07A0t7owLuBkRZk45livLEzP')
+aio = Client('Gayu2405', api )
 !pip install python-telegram-bot==13.0 --quiet
 from telegram.ext import Updater, MessageHandler,Filters
 
