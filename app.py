@@ -1,8 +1,9 @@
-!pip install adafruit-io --quiet
+import os
+api = os.getenv('ADAFRUIT_IO_KEY')
 from Adafruit_IO import Client
-aio = Client('Gayu2405', api )
-!pip install python-telegram-bot==13.0 --quiet
+aio = Client('Gayu2405' , api)
 from telegram.ext import Updater, MessageHandler,Filters
+
 
 def lighton(bot,update):
   chat_id= bot.message.chat_id
